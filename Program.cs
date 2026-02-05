@@ -4,8 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine();    
+
+            int taskNumber = 1;
+
+            do
+            {
+                Console.WriteLine($"Task {taskNumber} completed");
+                taskNumber++;
+            }
+            while (taskNumber <= 5 && taskNumber > 0);
+
+
         }
     }
 }
