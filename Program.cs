@@ -7,12 +7,11 @@
 
             int taskNumber = 1;
 
-            do
-            {
+            while (taskNumber <= 5 && taskNumber > 0) {
                 Console.WriteLine($"Task {taskNumber} completed");
                 taskNumber++;
             }
-            while (taskNumber <= 5 && taskNumber > 0);
+            
 
 
         }
