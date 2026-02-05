@@ -19,8 +19,34 @@
             do
             {
                 Console.WriteLine($"Attempt {attempt}");
+                attempt++;
             } while ( attempt <= 3);
 
+
+            for( int i = 1; i <= 4; i++)
+            {
+                Console.WriteLine($"Step {i}");
+            }
+
+
+            int number = 0;
+
+            while (number <= 6)
+            {
+                number++;
+                if (number == 4)
+                {
+                    //continue basically says hey, you found 4. do nothing with 4.
+                    continue;
+                }
+                if (number == 6)
+                {
+                    //break says hey, you found 6. this is the "off" button. turn off.
+                    break;
+                }
+
+                Console.WriteLine(number);
+            }
         }
     }
 }
